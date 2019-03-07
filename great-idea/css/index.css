@@ -55,7 +55,7 @@ table {
 html, body {
     height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	background-color: blanchedalmond;
+	background-color:  blanchedalmond; 
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
@@ -89,16 +89,21 @@ h1, h2, h3, h4, h5 {
 .main_nav a {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 18px;
+	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: rgb(241, 236, 236);
 	margin: 45px 12px;
-	padding: 22px;
+	padding: 7px 22px;
+	border: 1px solid white; 
 }
 
 .main_nav a:hover {
 	animation-name: myeffect;
 	animation-duration: 0.5s;
+	background-color: white;
+	border: solid 1px black;
+	color: black;
 }
  
 @keyframes myeffect {
@@ -108,14 +113,14 @@ h1, h2, h3, h4, h5 {
 	}
 
 	50% {
-		opacity: 0.5;
+		opacity: 1;
 		color: red;
         transform: translateX(30);
 	}
 
 	100% {
 		opacity: 1;
-		color: yellow;
+		color: black;
 		transform: translateX(0);
 	}
 }
@@ -185,11 +190,12 @@ p {
 
 .text_column1 , .text_column2  {
 	width: 450px;
+	height: auto;
 	background-color: burlywood;
 	padding: 10px;
 	border: solid 3px grey;
 	border-radius: 4px;
-	margin-top: 5px;
+	margin-top: 0px;
 	margin-bottom: 0px 
 }
 
